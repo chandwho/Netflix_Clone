@@ -24,7 +24,7 @@ export default function Main() {
             
 
   return (
-    <div className='w-full h-[550px]'>
+    <div className='w-full h-[550px] relative'>
       <div className='absolute w-full h-[550px] bg-gradient-to-tr from-black'></div>
         <img src={`https://image.tmdb.org/t/p/original${image}`} alt='' className='w-full h-full object-cover' />
       <div className='text-white flex flex-col absolute top-[20%] gap-3 p-4 md:p-8'>
@@ -36,7 +36,7 @@ export default function Main() {
         <p className='text-gray-400'>Released on: {date}</p>
         <p className='w-full md:w-[60%] lg:w-[40%]'>{truncateString(overview, 200)}</p>
       </div>
-      <div className='h-24 absolute top-[86%]  w-full bg-gradient-to-t from-[#141414] to-transparent '> </div>
+      <div className='h-24 absolute top-[83%]  w-full bg-gradient-to-t from-[#141414] to-transparent '> </div>
     </div>
   )
 }
